@@ -14,7 +14,7 @@ public class Q03 {
 
         // 1. 숫자 10개 입력
         
-        // 2. getSmallestNumbers에 입력받은 숫자를 넘기고, 가장 작은 3개의 수 가져오기
+        // 2. getSmallestNumbersByAsc 메서드를 이용해서 입력받은 숫자를 넘기고, 가장 작은 3개의 수 가져오기
 
         // 3. 가장 작은 3개의 수 출력
     }
