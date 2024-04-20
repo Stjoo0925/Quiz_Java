@@ -18,14 +18,23 @@ public class Q03 {
         // 2. getSmallestNumbersByAsc 메서드를 이용해서 입력받은 숫자를 넘기고, 가장 작은 3개의 수 가져오기
         // 3. 가장 작은 3개의 수 출력
         Scanner sc = new Scanner(System.in);    //  스캐너 호출
+
         int[] numbersArr = new int[10];  //  배열 생성
 
         System.out.println("Enter number"); //  숫자를 입력하라는 출력문
         for (int i = 0; i < numbersArr.length; i++) {   //  배열에 숫자를 입력하는 반복문
             numbersArr[i] = sc.nextInt();   //  배열에 스캐너를 이용하여 값을 입력
         }   //  배열에 숫자를 입력하는 반복문 종료
+
+
         Q03 get = new Q03();    //  클래스를 메모리에 올림
         int[] numbers = get.getSmallestNumbersByAsc(numbersArr);    //  메소드를 반환
+
+        int minCount = 3;   //  오름차순 되어 있는 3개의 값을 순서대로 출력하기 위해 변수 지정
+        for (int i = 0 ; i <= minCount - 1; i++) {  //  배열의 인덱스 minCount - 1 번까지 출력하기 위한 반복문
+            System.out.print(numbers[i] + " ");  //  배열의 i 번의 값 출력
+        }   //  반복문 종료
+
 
     }
 
@@ -41,10 +50,6 @@ public class Q03 {
                 }   //  반복문 종료
             }
         }   //  오름차순 정리 반복문 완료
-        int minCount = 3;   //  오름차순 되어 있는 3개의 값을 순서대로 출력하기 위해 변수 지정
-        for (int i = 0 ; i <= minCount - 1; i++) {  //  배열의 인덱스 minCount - 1 번까지 출력하기 위한 반복문
-            System.out.print(numbers[i] + " ");  //  배열의 i 번의 값 출력
-        }   //  반복문 종료
 
         return numbers;
     }
