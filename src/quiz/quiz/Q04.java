@@ -28,11 +28,11 @@ public class Q04 {
         String skillOder = sc.nextLine();
 
         Q04 skill = new Q04();
-        int skills = skill.jungyongLeesSadSmoulderSkillManaWaste(skillOder);
+        int skills = skill.usedManacalculations(skillOder);
 
     }
 
-    private int jungyongLeesSadSmoulderSkillManaWaste(String skills) {
+    private int usedManacalculations(String skills) {
         //남은 마나 가져오기
         String[] skillNum = skills.split(" ");
         int fullMana = 1000;
